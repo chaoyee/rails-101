@@ -1,4 +1,7 @@
-class Post < ActiveRecord::Base
+# Rails 4
+# class Post < ActiveRecord::Base
+
+class Post < ApplicationRecord
   validates :content, presence: true
 
   belongs_to :group, counter_cache: :post_count

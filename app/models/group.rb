@@ -1,4 +1,7 @@
-class Group < ActiveRecord::Base
+# Rails 4
+# class Group < ActiveRecord::Base
+
+class Group < ApplicationRecord
   validates :title, presence: true
 
   has_many :posts, dependent: :destroy

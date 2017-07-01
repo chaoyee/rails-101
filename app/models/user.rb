@@ -1,4 +1,7 @@
-class User < ActiveRecord::Base
+# Rails 4
+# class User < ActiveRecord::Base
+
+class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
